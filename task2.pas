@@ -6,9 +6,9 @@
 begin
   var year := ReadInteger('Введите год:');
   if ((year mod 100 = 0) and (year mod 400 <> 0)) or (year mod 4 <> 0)then
-    Println('Год не високосный!')
+    Println($'В {year} году 365 дней')
   else if (year mod 4 = 0) then
-    Println('Год високосный!');  
+    Println($'В {year} году 366 дней');  
 end.
 {log_1
 Введите год: 2100
